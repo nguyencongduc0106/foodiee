@@ -1,0 +1,129 @@
+.header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: var(--white);
+    padding: 1rem 6%;
+    z-index: 100;
+    box-shadow: var(--box-shadow);
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-right: 10rem;
+}
+
+.header__logo i {
+    color: var(--yellow);
+    margin-right: 0.3rem;
+}
+
+.header__navbar {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.header__navbar .navbar__close {
+    display: none;
+    color: var(--white);
+}
+
+.navbar__link {
+    border-radius: 1rem;
+    padding: .5rem 1.5rem;
+    color: var(--text-color);
+}
+
+.navbar__link:hover {
+    background: var(--yellow);
+    color: var(--white);
+}
+
+.header__icon {
+    display: flex;
+    font-size: 1.5rem;
+    column-gap: 1rem;
+    color: var(--back);
+}
+
+.header__icon i {
+    cursor: pointer;
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    border-radius: 50%;
+    background: #eee;
+}
+
+.header__icon i:hover {
+    color: var(--white);
+    background: var(--yellow);
+}
+
+.header__icon .icon__bars {
+    display: none;
+}
+
+/* Responsive */
+/* Tablet + Mobile */
+@media (max-width: 1023px) {
+
+}
+
+/* Tabet */
+@media (min-width: 739px) and (max-width: 1023px) {
+
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    html {
+        font-size: 50%;
+    }
+    .header__icon .icon__bars {
+        display: block;
+    }
+    .header__navbar {
+        position: absolute;
+        background: var(--black);
+        width: 60%;
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        flex-direction: column;
+        align-items: start;
+        /* row-gap: 2rem; */
+        padding: 1rem 0;
+        border-left: .1rem solid rgba(0, 0, 0, 0.1);
+        border-bottom: .1rem solid rgba(0, 0, 0, 0.1);
+        box-shadow: var(--box-shadow);
+    }
+    .header__navbar.open {
+        right: 0;
+    }
+    .header__navbar .navbar__close {
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 1rem;
+        margin: 0 2rem 0 auto;
+        display: block;
+    }
+    .navbar__link {
+        display: block;
+        width: 100%;
+        border-radius: 0;
+        color: var(--white);
+        padding: 1.5rem 4rem;
+    }
+}
