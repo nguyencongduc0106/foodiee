@@ -3,18 +3,36 @@ import './Header.css'
 
 const Header = () => {
 
-  // Open and Close navbar fuction
-  const [isOpen, setIsOpen] = useState(false)
+  // Open and Close navbar fuctions
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false)
   const openNavbar = () => {
-    setIsOpen(true)
+    setIsNavbarOpen(true)
   }
   const closeNavbar = () => {
-    setIsOpen(false)
+    setIsNavbarOpen(false)
   }
   const navLinks = document.querySelectorAll('.navbar__link')
   navLinks.forEach(function (navLink) {
     navLink.onclick = closeNavbar
   })
+
+  // Open and Close cart functions
+  const [isCartOpen, setIsCartOpen] = useState(false)
+  const openCart = () => {
+    setIsCartOpen(true)
+  }
+  const closeCart = () => {
+    setIsCartOpen(false)
+  }
+
+  // Open and Close user functions
+  const [isUserOpen, setIsUserOpen] = useState(false)
+  const openUser = () => {
+    setIsUserOpen(true)
+  }
+  const closeUser = () => {
+    setIsUserOpen(false)
+  }
 
   return (
     <div className='header'>
@@ -26,7 +44,7 @@ const Header = () => {
         </a>
 
         {/* Nav link */}
-        <div className={`header__navbar ${isOpen ? 'open' : ""}`}>
+        <div className={`header__navbar ${isNavbarOpen ? 'open' : ""}`}>
           <i className="navbar__close fa-solid fa-xmark" onClick={closeNavbar}></i>
           <a href="#home" className="navbar__link">Home</a>
           <a href="#menu" className="navbar__link">Menu</a>
@@ -36,11 +54,38 @@ const Header = () => {
         </div>
 
         {/* Icons */}
-        <div className="header__icon">
-          <i className="icon__bars fa-solid fa-bars" onClick={openNavbar}></i>
-          <i className="icon__cart fa-solid fa-cart-shopping"></i>
-          <i className="icon__user fa-solid fa-user"></i>
+        <div className="header__icons">
+          <i className="bars__icon fa-solid fa-bars" onClick={openNavbar}></i>
+          <i className="cart__icon fa-solid fa-cart-shopping"></i>
+          <i className="user__icon fa-solid fa-user" onClick={openUser}></i>
         </div>
+      </div>
+
+      {/* Cart */}
+      <div className={`cart__container ${isCartOpen ? 'open' : ""}`}>
+        <h1 className="cart__heading">Your
+          <span> Order</span>
+        </h1>
+        <ul className="cart__list">
+          <li className="cart__item">
+            <img src="" alt="" className="item__img" />
+            <div className="item__info">
+              <h3 className="item__name">Hamburger</h3>
+              <p className="item__price">$5</p>
+            </div>
+            <i className="item__delete fa-solid fa-xmark"></i>
+          </li>
+        </ul>
+      </div>
+
+      {/* User */}
+      <div className={`user__container ${isUserOpen ? 'open' : ""}`}>
+        <i className="user__close fa-solid fa-xmark" onClick={closeUser}></i>
+        <p className="user__link">Duckiee</p>
+        <p className="user__link">Change user name</p>
+        <p className="user__link">Change password</p>
+        <p className="user__link">Change phone number</p>
+        <p className="user__link">Log out</p>
       </div>
     </div>
   )
