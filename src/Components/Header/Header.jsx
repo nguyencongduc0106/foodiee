@@ -35,7 +35,7 @@ const Header = () => {
   }
 
   return (
-    <div className='header'>
+    <section className='header'>
       <div className="header__container">
         {/* Logo */}
         <a href="#" className="header__logo">
@@ -87,7 +87,7 @@ const Header = () => {
         <p className="user__link">Change phone number</p>
         <p className="user__link">Log out</p>
       </div>
-    </div>
+    </section>
   )
 }
 

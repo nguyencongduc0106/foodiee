@@ -1,10 +1,10 @@
 import React from 'react'
 import './Home.css'
-import about from '../../image/about.png'
+import home from '../../image/home.png'
 
 const Home = () => {
   return (
-    <div className='home'>
+    <section className='home' id='home'>
       <div className="home__content">
         <h2 className="content__heading">
           The best
@@ -31,8 +31,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <img src={about} alt="" className="home__img" />
-    </div>
+      <img src={home} alt="" className="home__img" />
+    </section>
   )
 }
 

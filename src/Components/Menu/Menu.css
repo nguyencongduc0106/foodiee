@@ -1,0 +1,61 @@
+.menu {
+    padding-top: 8.5rem;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-areas: 
+    "heading heading"
+    "filter list";
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+
+.menu__heading {
+    grid-area: heading;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--text-color);
+}
+
+.menu__heading span {
+    color: var(--yellow);
+}
+
+.menu__filter {
+    grid-area: filter;
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+.menu__choice {
+    margin-top: 1rem;
+    padding: .5rem 0 .5rem 0.5rem;
+    border-left: .4rem solid var(--yellow);
+}
+
+.menu__choice.active {
+    background: var(--yellow);
+    border-radius: 1rem;
+    color: var(--white);
+    transform: scale(1.05);
+}
+
+.menu__choice:hover {
+    background: var(--yellow);
+    border-radius: 1rem;
+    color: var(--white);
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+.menu__list {
+    grid-area: list;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    list-style: none;
+}
+
+.menu__item {
+    height: 30rem;
+}
