@@ -4,7 +4,7 @@ import home from '../../image/home.png'
 
 const Home = () => {
   return (
-    <section className='home' id='home'>
+    <section className="home" id='home'>
       <div className="home__content">
         <h2 className="content__heading">
           The best
@@ -18,11 +18,11 @@ const Home = () => {
         </p>
         <div className="content__pros">
           <div className="pros__detail">
-            <p class="fa-solid fa-truck-fast"></p>
+            <p className="fa-solid fa-truck-fast"></p>
             <span>Fast and free delivery</span>
           </div>
           <div className="pros__detail">
-            <p class="fa-solid fa-money-bill-wave"></p>
+            <p className="fa-solid fa-money-bill-wave"></p>
             <span>Multi method payments</span>
           </div>
           <div className="pros__detail">

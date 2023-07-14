@@ -81,7 +81,7 @@ const Header = () => {
       {/* User */}
       <div className={`user__container ${isUserOpen ? 'open' : ""}`}>
         <i className="user__close fa-solid fa-xmark" onClick={closeUser}></i>
-        <p className="user__link">Duckiee</p>
+        <p className="user__name">Duckiee</p>
         <p className="user__link">Change user name</p>
         <p className="user__link">Change password</p>
         <p className="user__link">Change phone number</p>

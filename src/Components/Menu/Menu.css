@@ -28,7 +28,7 @@
 
 .menu__choice {
     margin-top: 1rem;
-    padding: .5rem 0 .5rem 0.5rem;
+    padding: 1rem 0 1rem 0.5rem;
     border-left: .4rem solid var(--yellow);
 }
 
@@ -40,9 +40,6 @@
 }
 
 .menu__choice:hover {
-    background: var(--yellow);
-    border-radius: 1rem;
-    color: var(--white);
     transform: scale(1.08);
     cursor: pointer;
 }
@@ -51,11 +48,67 @@
     grid-area: list;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
     column-gap: 2rem;
     row-gap: 2rem;
     list-style: none;
 }
 
 .menu__item {
-    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
 }
+
+.menu__item:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.item__img {
+    width: 100%;
+    height: 15rem;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+
+.item__name {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--text-color);
+    padding-top: 1.5rem;
+}
+
+.item__desc {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    padding-top: .5rem;
+}
+
+.item__price-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+
+.item__price {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--yellow);
+}
+
+.item__btn {
+    opacity: 0;
+    padding: 1rem 4rem;
+    border-radius: 1rem;
+}
+
+.menu__item:hover .item__btn {
+    opacity: 1;
+}
+

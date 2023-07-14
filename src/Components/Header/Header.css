@@ -167,10 +167,21 @@
     border-radius: 50%;
 }
 
+.user__name {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--yellow);
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    border-bottom: .3rem solid var(--yellow);
+}
+
 .user__link {
     width: 100%;
     font-size: 2rem;
     padding: 1rem 2rem;
+    margin-top: .5rem;
 }
 
 .user__link:last-child {
