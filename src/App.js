@@ -12,9 +12,9 @@ function App() {
       <Header/>
       <Home/>
       <Menu/>
-      {/* <Review/>
-      <About/>
-      <Blog/> */}
+      <Review/>
+      {/* <About/> */}
+      <Blog/>
     </div>
   );
 }

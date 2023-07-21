@@ -13,7 +13,7 @@ import beverage3 from '../../image/beverage3.jpg'
 const data = [
     {
         id: '1',
-        category: 'hamburger',
+        category: 'Hamburger',
         img: burger1,
         name: 'Hamburger 1',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -21,7 +21,7 @@ const data = [
     },
     {
         id: '2',
-        category: 'hamburger',
+        category: 'Hamburger',
         img: burger2,
         name: 'Hamburger 2',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -29,7 +29,7 @@ const data = [
     },
     {
         id: '3',
-        category: 'hamburger',
+        category: 'Hamburger',
         img: burger3,
         name: 'Hamburger 3',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -37,7 +37,7 @@ const data = [
     },
     {
         id: '4',
-        category: 'hamburger',
+        category: 'Hamburger',
         img: burger4,
         name: 'Hamburger 4',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -45,7 +45,7 @@ const data = [
     },
     {
         id: '5',
-        category: 'pizza',
+        category: 'Pizza',
         img: pizza1,
         name: 'Pizza 1',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -53,7 +53,7 @@ const data = [
     },
     {
         id: '6',
-        category: 'pizza',
+        category: 'Pizza',
         img: pizza2,
         name: 'Pizza 2',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -61,7 +61,7 @@ const data = [
     },
     {
         id: '7',
-        category: 'pizza',
+        category: 'Pizza',
         img: pizza3,
         name: 'Pizza 3',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -69,7 +69,7 @@ const data = [
     },
     {
         id: '8',
-        category: 'pizza',
+        category: 'Pizza',
         img: pizza4,
         name: 'Pizza 4',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -77,7 +77,7 @@ const data = [
     },
     {
         id: '9',
-        category: 'beverage',
+        category: 'Beverage',
         img: beverage1,
         name: 'Beverage 1',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -85,7 +85,7 @@ const data = [
     },
     {
         id: '10',
-        category: 'beverage',
+        category: 'Beverage',
         img: beverage2,
         name: 'Beverage 2',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -93,7 +93,7 @@ const data = [
     },
     {
         id: '11',
-        category: 'beverage',
+        category: 'Beverage',
         img: beverage3,
         name: 'Beverage 3',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
