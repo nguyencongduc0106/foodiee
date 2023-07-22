@@ -3,8 +3,8 @@ import Header from './Components/Header/Header.jsx';
 import Home from './Components/Home/Home.jsx';
 import Menu from './Components/Menu/Menu.jsx';
 import Review from './Components/Review/Review.jsx';
-import About from './Components/About/About.jsx';
 import Blog from './Components/Blog/Blog.jsx';
+import Footer from './Components/Footer/Footer.jsx';
 
 function App() {
   return (
@@ -13,8 +13,8 @@ function App() {
       <Home/>
       <Menu/>
       <Review/>
-      {/* <About/> */}
       <Blog/>
+      <Footer/>
     </div>
   );
 }

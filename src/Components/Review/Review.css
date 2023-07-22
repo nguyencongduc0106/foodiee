@@ -16,6 +16,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 2rem;
+    padding-top: 5rem;
 }
 
 .review__card {
@@ -28,11 +29,11 @@
 }
 
 .card__img {
-    height: 12rem;
-    width: 12rem;
+    height: 10rem;
+    width: 10rem;
     border-radius: 50%;
-    border: 1rem solid var(--light-color);
-    margin-top: -8rem;
+    border: 1rem solid var(--yellow);
+    margin-top: -5rem;
     object-fit: cover;
 }
 
@@ -45,13 +46,10 @@
     padding-top: 1.5rem;
 }
 
-.star {
-
-}
-
 .card__comment {
     font-size: 1.5rem;
     padding-top: 1.5rem;
+    text-align: left;
 }
 
 .review__user {
@@ -65,24 +63,74 @@
 }
 
 .user__heading {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--text-color);
     padding-bottom: 1.5rem;
 }
 
 .user__rating {
-
+    padding-bottom: 2rem;
+    ;
 }
 
 .user__comment {
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--text-color);
-    padding: 2rem 0;
 }
 
 .user__btn {
     position: absolute;
     right: 2rem;
     bottom: 2rem;
+}
+
+/* Responsive */
+/* Tablet + Mobile */
+@media (max-width: 1023px) {
+    
+}
+
+/* Tabet */
+@media (min-width: 739px) and (max-width: 1023px) {
+    
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .review__list {
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+        padding-top: 2rem;
+    }
+    .review__card {
+        display: grid;
+        grid-template-areas: 
+        "img name rating"
+        "img comment comment";
+        grid-template-columns: auto 1fr 1fr;
+        column-gap: 2rem;
+        /* padding: 1rem; */
+    }
+    .card__img {
+        grid-area: img;
+        height: 6rem;
+        width: 6rem;
+        border: .6rem solid var(--yellow);
+        margin-top: 0;
+    }
+    .card__name {
+        grid-area: name;
+        text-align: left;
+        padding-top: .5rem;
+    }
+    .card__rating {
+        grid-area: rating;
+        text-align: right;
+        padding-top: .5rem;
+    }
+    .card__comment {
+        grid-area: comment;
+        padding: 0 0 .5rem;
+    }
 }

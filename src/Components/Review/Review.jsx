@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Review.css'
+import data from './data'
 
 const Review = () => {
+
+    const reviews = data.slice(0, 4)
+
     return (
         <section className="review" id="review">
             <h1 className="review__heading">
@@ -10,21 +14,25 @@ const Review = () => {
             </h1>
 
             <div className="review__list">
-                <div className="review__card">
-                    <img className="card__img" src="./assets/image/customer-avt.jpg" alt="image" />
-                    <h3 className="card__name">Namichii</h3>
-                    <div className="card__rating">
-                        <i className="star fa-solid fa-star"></i>
-                        <i className="star fa-solid fa-star"></i>
-                        <i className="star fa-solid fa-star"></i>
-                        <i className="star fa-solid fa-star"></i>
-                        <i className="star fa-solid fa-star"></i>
-                    </div>
-                    <p className="card__comment">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, ad
-                        cum?!
-                    </p>
-                </div>
+                {
+                    reviews.map(review => {
+                        const {id, img, name, comment} = review
+                        return (
+                        <div key={id} className="review__card">
+                            <img className="card__img" src={img} alt="image" />
+                            <h3 className="card__name">{name}</h3>
+                            <div className="card__rating">
+                                <i className="star fa-solid fa-star"></i>
+                                <i className="star fa-solid fa-star"></i>
+                                <i className="star fa-solid fa-star"></i>
+                                <i className="star fa-solid fa-star"></i>
+                                <i className="star fa-solid fa-star"></i>
+                            </div>
+                            <p className="card__comment">{comment}</p>
+                        </div>
+                        )
+                    })
+                }
             </div>
 
             <div className="review__user">

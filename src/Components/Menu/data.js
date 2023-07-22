@@ -14,6 +14,7 @@ const data = [
     {
         id: '1',
         category: 'Hamburger',
+        isBestSeller: true,
         img: burger1,
         name: 'Hamburger 1',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -22,6 +23,7 @@ const data = [
     {
         id: '2',
         category: 'Hamburger',
+        isBestSeller: false,
         img: burger2,
         name: 'Hamburger 2',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -30,6 +32,7 @@ const data = [
     {
         id: '3',
         category: 'Hamburger',
+        isBestSeller: true,
         img: burger3,
         name: 'Hamburger 3',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -38,6 +41,7 @@ const data = [
     {
         id: '4',
         category: 'Hamburger',
+        isBestSeller: false,
         img: burger4,
         name: 'Hamburger 4',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -46,6 +50,7 @@ const data = [
     {
         id: '5',
         category: 'Pizza',
+        isBestSeller: false,
         img: pizza1,
         name: 'Pizza 1',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -54,6 +59,7 @@ const data = [
     {
         id: '6',
         category: 'Pizza',
+        isBestSeller: true,
         img: pizza2,
         name: 'Pizza 2',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -62,6 +68,7 @@ const data = [
     {
         id: '7',
         category: 'Pizza',
+        isBestSeller: false,
         img: pizza3,
         name: 'Pizza 3',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -70,6 +77,7 @@ const data = [
     {
         id: '8',
         category: 'Pizza',
+        isBestSeller: true,
         img: pizza4,
         name: 'Pizza 4',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -78,6 +86,7 @@ const data = [
     {
         id: '9',
         category: 'Beverage',
+        isBestSeller: false,
         img: beverage1,
         name: 'Beverage 1',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -86,6 +95,7 @@ const data = [
     {
         id: '10',
         category: 'Beverage',
+        isBestSeller: false,
         img: beverage2,
         name: 'Beverage 2',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -94,6 +104,7 @@ const data = [
     {
         id: '11',
         category: 'Beverage',
+        isBestSeller: false,
         img: beverage3,
         name: 'Beverage 3',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',

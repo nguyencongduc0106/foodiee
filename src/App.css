@@ -68,6 +68,11 @@ section {
   left: 0;
 }
 
+.star {
+  font-size: 1.7rem;
+  color: var(--yellow);
+}
+
 /* Responsive */
 /* Tablet + Mobile */
 @media (max-width: 1023px) {
