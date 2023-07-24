@@ -68,22 +68,25 @@ const Header = () => {
         <ul className="cart__list">
           <li className="cart__item">
             <img src="" alt="" className="item__img" />
-            <div className="item__info">
-              <h3 className="item__name">Hamburger</h3>
-              <p className="item__price">$5</p>
-            </div>
+            <h3 className="item__name">Hamburger</h3>
+            <p className="item__price">$5</p>
+            <p className="item__quantity">x 2</p>
+            <p className="item__total">$10</p>
             <i className="item__delete fa-solid fa-xmark"></i>
           </li>
         </ul>
+        <p className="cart__total">Total: $50</p>
+        <p className="cart__close btn">Close</p>
+        <p className="cart__order btn">Order now</p>
       </div>
 
       {/* User */}
       <div className={`user__container ${isUserOpen ? 'open' : ""}`}>
         <i className="user__close fa-solid fa-xmark" onClick={closeUser}></i>
         <p className="user__name">Duckiee</p>
+        <p className="user__link">Change avatar</p>
         <p className="user__link">Change user name</p>
         <p className="user__link">Change password</p>
-        <p className="user__link">Change phone number</p>
         <p className="user__link">Log out</p>
       </div>
     </section>

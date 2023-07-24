@@ -96,22 +96,25 @@
     top: 50vh;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: flex;
-    display: none;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-areas: 
+    "heading heading"
+    "list list"
+    "total total"
+    "close order";
     background: var(--white);
     width: 60%;
-    height: 80vh;
     padding: 2rem;
     border: .1rem solid rgba(0, 0, 0, 0.2);
-    border-radius: 1rem;
+    border-radius: 2rem;
     box-shadow: var(--box-shadow);
 }
 
 .cart__heading {
-    font-size: 2.5rem;
+    grid-area: heading;
+    font-size: 4rem;
     color: var(--text-color);
+    text-align: center;
 }
 
 .cart__heading span {
@@ -119,19 +122,72 @@
 }
 
 .cart__list {
+    grid-area: list;
+    height: 40rem;
     list-style: none;
+    padding-top: 1rem;
 }
 
 .cart__item {
-    display: flex;
-    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "img name name name delete"
+    "img price quantity total delete";
+    grid-template-columns: 20rem 1fr 1fr 1fr auto;
+    border-radius: 2rem;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    box-shadow: var(--box-shadow);
+    margin-top: 1rem;
 }
 
-.item__img {}
+.cart__item .item__img {
+    grid-area: img;
+    height: 8rem;
+}
 
-.item__name {}
+.cart__item .item__name {
+    grid-area: name;
+    padding: 1rem 1rem 0;
+}
 
-.item__price {}
+.cart__item .item__price {
+    grid-area: price;
+    /* font-size: 10rem; */
+}
+
+.item__quantity {
+    grid-area: quantity;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    text-align: right;
+}
+
+.item__total {
+    grid-area: total;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--yellow);
+    text-align: right;
+}
+
+.cart__item .item__delete {
+    grid-area: delete;
+    font-size: 2.5rem;
+    margin: auto 1rem;
+}
+
+.cart__total {
+    grid-area: total;
+    text-align: right;
+}
+
+.cart__close {
+    grid-area: close;
+}
+
+.cart__order {
+    grid-area: order;
+}
 
 /* User */
 .user__container {

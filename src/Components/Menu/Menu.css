@@ -77,7 +77,6 @@
 
 .item__name {
     font-size: 2rem;
-    font-weight: 500;
     color: var(--text-color);
     padding-top: 1.5rem;
 }

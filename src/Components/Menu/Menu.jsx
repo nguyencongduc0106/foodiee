@@ -52,10 +52,10 @@ const Menu = () => {
                         return (
                             <li key={id} className="menu__item">
                                 <img src={img} alt="" className="item__img" />
-                                <p className="item__name">{name}</p>
+                                <h3 className="item__name">{name}</h3>
                                 <p className="item__desc">{desc}</p>
                                 <div className="item__price-btn">
-                                    <p className="item__price">{price}</p>
+                                    <p className="item__price">${price}</p>
                                     <p className="item__btn btn">
                                         <i className="fa-solid fa-cart-plus"></i>
                                     </p>

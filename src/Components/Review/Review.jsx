@@ -16,20 +16,22 @@ const Review = () => {
             <div className="review__list">
                 {
                     reviews.map(review => {
-                        const {id, img, name, comment} = review
+                        const { id, img, name, rating, comment } = review
                         return (
-                        <div key={id} className="review__card">
-                            <img className="card__img" src={img} alt="image" />
-                            <h3 className="card__name">{name}</h3>
-                            <div className="card__rating">
-                                <i className="star fa-solid fa-star"></i>
-                                <i className="star fa-solid fa-star"></i>
-                                <i className="star fa-solid fa-star"></i>
-                                <i className="star fa-solid fa-star"></i>
-                                <i className="star fa-solid fa-star"></i>
+                            <div key={id} className="review__card">
+                                <img className="card__img" src={img} alt="image" />
+                                <h3 className="card__name">{name}</h3>
+                                <div className="card__rating">
+                                    {
+                                        rating.map((star, index) => {
+                                            return (
+                                                <i key={index} className={`star ${star ? 'fa-solid' : 'fa-regular'} fa-star`}></i>
+                                            )
+                                        })
+                                    }
+                                </div>
+                                <p className="card__comment">{comment}</p>
                             </div>
-                            <p className="card__comment">{comment}</p>
-                        </div>
                         )
                     })
                 }
@@ -38,11 +40,15 @@ const Review = () => {
             <div className="review__user">
                 <h3 className='user__heading'>Leave your rating</h3>
                 <div className="user__rating">
-                    <i className="star star__1 fa-regular fa-star"></i>
-                    <i className="star star__2 fa-regular fa-star"></i>
-                    <i className="star star__3 fa-regular fa-star"></i>
-                    <i className="star star__4 fa-regular fa-star"></i>
-                    <i className="star star__5 fa-regular fa-star"></i>
+                    <i className="star star__rate fa-solid fa-star">
+                        <i className="star star__rate fa-solid fa-star">
+                            <i className="star star__rate fa-solid fa-star">
+                                <i className="star star__rate fa-solid fa-star">
+                                    <i className="star star__rate fa-solid fa-star"></i>
+                                </i>
+                            </i>
+                        </i>
+                    </i>
                 </div>
                 <input className="user__comment" type="text" placeholder="Your comment ..." />
                 <p className="user__btn btn">Send</p>

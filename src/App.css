@@ -73,6 +73,15 @@ section {
   color: var(--yellow);
 }
 
+.star__rate {
+  color: var(--text-color);
+}
+
+.star__rate:hover {
+  cursor: pointer;
+  color: var(--yellow);
+}
+
 /* Responsive */
 /* Tablet + Mobile */
 @media (max-width: 1023px) {

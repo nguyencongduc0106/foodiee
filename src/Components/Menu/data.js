@@ -1,114 +1,114 @@
-import burger1 from '../../image/burger1.jpg'
-import burger2 from '../../image/burger2.jpg'
-import burger3 from '../../image/burger3.jpg'
-import burger4 from '../../image/burger4.jpg'
-import pizza1 from '../../image/pizza1.jpg'
-import pizza2 from '../../image/pizza2.jpg'
-import pizza3 from '../../image/pizza3.jpg'
-import pizza4 from '../../image/pizza4.jpg'
-import beverage1 from '../../image/beverage1.jpg'
-import beverage2 from '../../image/beverage2.jpg'
-import beverage3 from '../../image/beverage3.jpg'
+import doubleCheeseBurger from '../../image/doubleCheeseBurger.jpg'
+import classicBurger from '../../image/classicBurger.jpg'
+import chickenBurger from '../../image/chickenBurger.jpg'
+import spicyBurger from '../../image/spicyBurger.jpg'
+import vegeterianPizza from '../../image/vegeterianPizza.jpg'
+import seafoodPizza from '../../image/seafoodPizza.jpg'
+import sausagePizza from '../../image/sausagePizza.jpg'
+import baconPizza from '../../image/baconPizza.jpg'
+import coffee from '../../image/coffee.jpg'
+import tropicalMix from '../../image/tropicalMix.jpg'
+import soda from '../../image/soda.jpg'
 
 const data = [
     {
         id: '1',
         category: 'Hamburger',
         isBestSeller: true,
-        img: burger1,
-        name: 'Hamburger 1',
+        img: doubleCheeseBurger,
+        name: 'Double chesse buger',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-        price: '$5.25'
+        price: 5.85
     },
     {
         id: '2',
         category: 'Hamburger',
         isBestSeller: false,
-        img: burger2,
-        name: 'Hamburger 2',
+        img: classicBurger,
+        name: 'Classic burger',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-        price: '$5.25'
+        price: 5.2
     },
     {
         id: '3',
         category: 'Hamburger',
         isBestSeller: true,
-        img: burger3,
-        name: 'Hamburger 3',
+        img: chickenBurger,
+        name: 'Chicken burger',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-        price: '$5.25'
+        price: 5
     },
     {
         id: '4',
         category: 'Hamburger',
         isBestSeller: false,
-        img: burger4,
-        name: 'Hamburger 4',
+        img: spicyBurger,
+        name: 'Spicy burger',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-        price: '$5.25'
+        price: 5.75
     },
     {
         id: '5',
         category: 'Pizza',
         isBestSeller: false,
-        img: pizza1,
-        name: 'Pizza 1',
+        img: vegeterianPizza,
+        name: 'Vegeterian pizza',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-        price: '$5.25'
+        price: 10.5
     },
     {
         id: '6',
         category: 'Pizza',
         isBestSeller: true,
-        img: pizza2,
-        name: 'Pizza 2',
+        img: seafoodPizza,
+        name: 'Seafood pizza',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-        price: '$5.25'
+        price: 14.2
     },
     {
         id: '7',
         category: 'Pizza',
         isBestSeller: false,
-        img: pizza3,
-        name: 'Pizza 3',
+        img: sausagePizza,
+        name: 'Sausage pizza',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-        price: '$5.25'
+        price: 12.2
     },
     {
         id: '8',
         category: 'Pizza',
         isBestSeller: true,
-        img: pizza4,
-        name: 'Pizza 4',
+        img: baconPizza,
+        name: 'Bacon pizza',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-        price: '$5.25'
+        price: 13
     },
     {
         id: '9',
         category: 'Beverage',
         isBestSeller: false,
-        img: beverage1,
-        name: 'Beverage 1',
+        img: coffee,
+        name: 'Hot coffee',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-        price: '$5.25'
+        price: 4.2
     },
     {
         id: '10',
         category: 'Beverage',
-        isBestSeller: false,
-        img: beverage2,
-        name: 'Beverage 2',
+        isBestSeller: true,
+        img: tropicalMix,
+        name: 'Tropical mix',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-        price: '$5.25'
+        price: 4.85
     },
     {
         id: '11',
         category: 'Beverage',
         isBestSeller: false,
-        img: beverage3,
-        name: 'Beverage 3',
+        img: soda,
+        name: 'Blue soda',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-        price: '$5.25'
+        price: 4.2
     },
 ];
 
