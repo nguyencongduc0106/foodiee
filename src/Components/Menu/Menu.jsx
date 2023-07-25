@@ -4,15 +4,15 @@ import data from './data.js'
 
 const Menu = () => {
 
-    const categories = ['All', 'Best seller', 'Hamburger', 'Pizza', 'Beverage']
+    const categories = ['All', 'Popular', 'Burger', 'Pizza', 'Drinks']
     const [filter, setFilter] = useState('All')
     const [menu, setMenu] = useState(data)
     useEffect(() => {
         if (filter === 'All') {
             setMenu(data)
-        } else if (filter === 'Best seller') {
+        } else if (filter === 'Popular') {
             const filteredMenu = data.filter(item => {
-                return item.isBestSeller
+                return item.isPopular
             })
             setMenu(filteredMenu)
         } else {

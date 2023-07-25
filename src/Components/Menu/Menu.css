@@ -120,10 +120,6 @@
             "list";
         grid-template-columns: 1fr;
     }
-}
-
-/* Tabet */
-@media (min-width: 739px) and (max-width: 1023px) {
     .menu__filter {
         display: flex;
         gap: 1.5rem;
@@ -142,31 +138,41 @@
     }
 }
 
+/* Tabet */
+@media (min-width: 739px) and (max-width: 1023px) {
+    
+}
+
 /* Mobile */
 @media (max-width: 739px) {
-    .menu__filter {
+    /* .menu__filter {
         display: flex;
+        flex-direction: column;
         gap: 1.5rem;
-        /* display: none; */
-    }
-    .menu__choice {
+    } */
+    /* .menu__choice {
         display: none;
         width: 15rem;
         text-align: center;
         padding: 1rem 0;
-    }
-    /* .menu__filter:hover ~ .menu__choice {
-        display: block;
     } */
+    /* .menu__filter:hover .menu__choice {
+        display: block;
+    }
     .menu__choice:hover {
         display: block;
-        /* background: #fff; */
         transform: none;
     }
     .menu__choice.active {
         display: block;
         margin: 0rem 0rem 0rem auto;
         transform: none;
+    } */
+    .menu__filter {
+        gap: .5rem;
+    }
+    .menu__choice {
+        padding: 1rem 1.2rem;
     }
     .menu__list {
         grid-template-columns: repeat(2, 1fr);

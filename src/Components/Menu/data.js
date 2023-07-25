@@ -13,17 +13,17 @@ import soda from '../../image/soda.jpg'
 const data = [
     {
         id: '1',
-        category: 'Hamburger',
-        isBestSeller: true,
+        category: 'Burger',
+        isPopular: true,
         img: doubleCheeseBurger,
         name: 'Double chesse buger',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-        price: 5.85
+        price: 5.8
     },
     {
         id: '2',
-        category: 'Hamburger',
-        isBestSeller: false,
+        category: 'Burger',
+        isPopular: false,
         img: classicBurger,
         name: 'Classic burger',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -31,8 +31,8 @@ const data = [
     },
     {
         id: '3',
-        category: 'Hamburger',
-        isBestSeller: true,
+        category: 'Burger',
+        isPopular: true,
         img: chickenBurger,
         name: 'Chicken burger',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -40,17 +40,17 @@ const data = [
     },
     {
         id: '4',
-        category: 'Hamburger',
-        isBestSeller: false,
+        category: 'Burger',
+        isPopular: false,
         img: spicyBurger,
         name: 'Spicy burger',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-        price: 5.75
+        price: 5.7
     },
     {
         id: '5',
         category: 'Pizza',
-        isBestSeller: false,
+        isPopular: false,
         img: vegeterianPizza,
         name: 'Vegeterian pizza',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -59,7 +59,7 @@ const data = [
     {
         id: '6',
         category: 'Pizza',
-        isBestSeller: true,
+        isPopular: true,
         img: seafoodPizza,
         name: 'Seafood pizza',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -68,7 +68,7 @@ const data = [
     {
         id: '7',
         category: 'Pizza',
-        isBestSeller: false,
+        isPopular: false,
         img: sausagePizza,
         name: 'Sausage pizza',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -77,7 +77,7 @@ const data = [
     {
         id: '8',
         category: 'Pizza',
-        isBestSeller: true,
+        isPopular: true,
         img: baconPizza,
         name: 'Bacon pizza',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -85,8 +85,8 @@ const data = [
     },
     {
         id: '9',
-        category: 'Beverage',
-        isBestSeller: false,
+        category: 'Drinks',
+        isPopular: false,
         img: coffee,
         name: 'Hot coffee',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -94,17 +94,17 @@ const data = [
     },
     {
         id: '10',
-        category: 'Beverage',
-        isBestSeller: true,
+        category: 'Drinks',
+        isPopular: true,
         img: tropicalMix,
         name: 'Tropical mix',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-        price: 4.85
+        price: 4.8
     },
     {
         id: '11',
-        category: 'Beverage',
-        isBestSeller: false,
+        category: 'Drinks',
+        isPopular: false,
         img: soda,
         name: 'Blue soda',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',

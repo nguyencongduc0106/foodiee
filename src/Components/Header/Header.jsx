@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './Header.css'
+import cartList from './data'
 
 const Header = () => {
 
@@ -17,6 +18,13 @@ const Header = () => {
   })
 
   // Open and Close cart functions
+  // const cartList = data
+  var cartQuantity = 0
+  var cartTotal = 0
+  cartList.forEach(item => {
+    cartQuantity += item.quantity
+    cartTotal += item.price * item.quantity
+  })
   const [isCartOpen, setIsCartOpen] = useState(false)
   const openCart = () => {
     setIsCartOpen(true)
@@ -55,7 +63,10 @@ const Header = () => {
         {/* Icons */}
         <div className="header__icons">
           <i className="bars__icon fa-solid fa-bars" onClick={openNavbar}></i>
-          <i className="cart__icon fa-solid fa-cart-shopping"></i>
+          <p className="cart__icon" onClick={openCart}>
+            <i className="fa-solid fa-cart-shopping"></i>
+            <span className='cart__quantity'>{cartQuantity}</span>
+          </p>
           <i className="user__icon fa-solid fa-user" onClick={openUser}></i>
         </div>
       </div>
@@ -66,18 +77,36 @@ const Header = () => {
           <span> Order</span>
         </h1>
         <ul className="cart__list">
-          <li className="cart__item">
-            <img src="" alt="" className="item__img" />
-            <h3 className="item__name">Hamburger</h3>
-            <p className="item__price">$5</p>
-            <p className="item__quantity">x 2</p>
-            <p className="item__total">$10</p>
-            <i className="item__delete fa-solid fa-xmark"></i>
-          </li>
+          {
+            cartList.map(item => {
+              const { id, img, name, price, quantity } = item
+              var itemTotal = Math.round(price * quantity * 10) / 10
+              return (
+                <li key={id} className="cart__item">
+                  <img src={img} alt="" className="item__img" />
+                  <div className="item__info">
+                    <h3 className="item__name">{name}</h3>
+                    <div className="item__detail">
+                      <p className="item__price">${price}</p>
+                      <p className="item__quantity">
+                        <i className="quantity__minus fa-solid fa-minus"></i>
+                        {quantity}
+                        <i className="quantity__plus fa-solid fa-plus"></i>
+                      </p>
+                      <p className="item__total">${itemTotal}</p>
+                    </div>
+                  </div>
+                  <i className="item__delete fa-solid fa-trash-can"></i>
+                </li>
+              )
+            })
+          }
         </ul>
-        <p className="cart__total">Total: $50</p>
-        <p className="cart__close btn">Close</p>
-        <p className="cart__order btn">Order now</p>
+        <p className="cart__total">Total: ${cartTotal}</p>
+        <div className="cart__btn">
+          <p className="btn__close btn" onClick={closeCart}>Close</p>
+          <p className="btn__order btn">Order now</p>
+        </div>
       </div>
 
       {/* User */}
