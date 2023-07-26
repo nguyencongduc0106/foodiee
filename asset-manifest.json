@@ -1,23 +1,40 @@
 {
   "files": {
-    "main.css": "/foodiee/static/css/main.0ab0d896.css",
-    "main.js": "/foodiee/static/js/main.e55c3f9d.js",
+    "main.css": "/foodiee/static/css/main.de9c91b1.css",
+    "main.js": "/foodiee/static/js/main.783de5e4.js",
     "static/js/787.02b28e39.chunk.js": "/foodiee/static/js/787.02b28e39.chunk.js",
+    "static/media/home.png": "/foodiee/static/media/home.7ebde8effa0592026d84.png",
+    "static/media/blog2.jpg": "/foodiee/static/media/blog2.ee981317b276863929ce.jpg",
+    "static/media/blog1.jpg": "/foodiee/static/media/blog1.c8f713a035b87e334032.jpg",
+    "static/media/coffee.jpg": "/foodiee/static/media/coffee.cef315f86d96c433fc15.jpg",
     "static/media/fa-solid-900.ttf": "/foodiee/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
+    "static/media/baconPizza.jpg": "/foodiee/static/media/baconPizza.e56800f9a4d6d0f00585.jpg",
+    "static/media/classicBurger.jpg": "/foodiee/static/media/classicBurger.6f35fdf8c3475b2a93b8.jpg",
     "static/media/fa-brands-400.ttf": "/foodiee/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
+    "static/media/customerAvt.jpg": "/foodiee/static/media/customerAvt.9bbcbae413ad695e0ca6.jpg",
+    "static/media/soda.jpg": "/foodiee/static/media/soda.65c2d4194373503bd428.jpg",
+    "static/media/seafoodPizza.jpg": "/foodiee/static/media/seafoodPizza.6119db7391d5645b3df3.jpg",
     "static/media/fa-solid-900.woff2": "/foodiee/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
+    "static/media/sausagePizza.jpg": "/foodiee/static/media/sausagePizza.c413f236f18bc0d0a31f.jpg",
+    "static/media/doubleCheeseBurger.jpg": "/foodiee/static/media/doubleCheeseBurger.e704094ae13486148649.jpg",
+    "static/media/blog3.jpg": "/foodiee/static/media/blog3.fa9a418643a789f7f41f.jpg",
     "static/media/fa-brands-400.woff2": "/foodiee/static/media/fa-brands-400.e033a13ee751afc1860c.woff2",
+    "static/media/spicyBurger.jpg": "/foodiee/static/media/spicyBurger.f0f1f1789e13d98172c1.jpg",
     "static/media/fa-regular-400.ttf": "/foodiee/static/media/fa-regular-400.d87474231f4192884802.ttf",
+    "static/media/chickenBurger.jpg": "/foodiee/static/media/chickenBurger.d4d0c7070655e822291b.jpg",
+    "static/media/blog4.jpg": "/foodiee/static/media/blog4.21506316d3b43c405c9c.jpg",
+    "static/media/tropicalMix.jpg": "/foodiee/static/media/tropicalMix.fcb5b2ef4b9927c68bef.jpg",
     "static/media/fa-regular-400.woff2": "/foodiee/static/media/fa-regular-400.3223dc79c1adee56370b.woff2",
+    "static/media/vegeterianPizza.jpg": "/foodiee/static/media/vegeterianPizza.d582e73daa784dbe6e12.jpg",
     "static/media/fa-v4compatibility.ttf": "/foodiee/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
     "static/media/fa-v4compatibility.woff2": "/foodiee/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
     "index.html": "/foodiee/index.html",
-    "main.0ab0d896.css.map": "/foodiee/static/css/main.0ab0d896.css.map",
-    "main.e55c3f9d.js.map": "/foodiee/static/js/main.e55c3f9d.js.map",
+    "main.de9c91b1.css.map": "/foodiee/static/css/main.de9c91b1.css.map",
+    "main.783de5e4.js.map": "/foodiee/static/js/main.783de5e4.js.map",
     "787.02b28e39.chunk.js.map": "/foodiee/static/js/787.02b28e39.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ab0d896.css",
-    "static/js/main.e55c3f9d.js"
+    "static/css/main.de9c91b1.css",
+    "static/js/main.783de5e4.js"
   ]
 }
